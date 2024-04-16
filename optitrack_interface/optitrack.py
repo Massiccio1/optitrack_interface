@@ -59,7 +59,7 @@ class Optitrack(Node):
       msg.header.frame_id = "tag"
       msg.header.stamp = self.get_clock().now().to_msg()
 
-      #switch to NED
+      #publish as is, other pgograms will change reference system
 
       msg.pose.position.x = position[0]
       msg.pose.position.y = position[1]
