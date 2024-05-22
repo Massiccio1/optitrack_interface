@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
 		'optitrack = optitrack_interface.optitrack:main',
+		'optitrack2 = optitrack_interface.all_in_one:main',
         ],
     },
 )
